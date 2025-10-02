@@ -1,0 +1,27 @@
+{
+  "name": "tp6-ingycalidad",
+  "version": "1.0.0",
+  "description": "��#\u0000 \u0000T\u0000P\u00006\u0000-\u0000I\u0000n\u0000g\u0000e\u0000n\u0000i\u0000e\u0000r\u0000i\u0000a\u0000Y\u0000C\u0000a\u0000l\u0000i\u0000d\u0000a\u0000d\u0000S\u0000W\u0000\r\u0000 \u0000",
+  "main": "testing.js",
+   "scripts": {
+    "test": "cypress run",
+    "test:open": "cypress open",
+    "test:chrome": "cypress run --browser chrome",
+    "test:headed": "cypress run --headed"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jeanpaulmst/TP6-IngenieriaYCalidadSW.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jeanpaulmst/TP6-IngenieriaYCalidadSW/issues"
+  },
+  "homepage": "https://github.com/jeanpaulmst/TP6-IngenieriaYCalidadSW#readme",
+  "devDependencies": {
+    "cypress": "^15.3.0",
+    "eslint": "^9.36.0",
+    "eslint-plugin-cypress": "^5.2.0"
+  }
+}
