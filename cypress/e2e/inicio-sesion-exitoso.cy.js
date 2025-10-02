@@ -3,23 +3,16 @@
 describe('Inicio de Sesion exitoso', () => {
   
   it('debería realizar login exitoso con las credenciales proporcionadas', () => {
-    // Primero registrar el usuario
+    
+    const email = 'mazeligetama@gmail.com';
+    const password = 'Prueba123';
+    
+    // Visitar la página de login
     cy.visit('/');
-    cy.contains('Sign up').click();
     
-    cy.get('#firstName').type('Mazel');
-    cy.get('#lastName').type('Igeta');
-    cy.get('#email').type('mazeligetama@gmail.com');
-    cy.get('#password').type('Prueba123');
-    cy.get('#submit').click();
-    
-    // Verificar registro exitoso y hacer logout
-    cy.url().should('include', '/contactList');
-    cy.get('#logout').click();
-    
-    // Ahora hacer login
-    cy.get('#email').type('mazeligetama@gmail.com');
-    cy.get('#password').type('Prueba123');
+    // Hacer login directamente con credenciales existentes
+    cy.get('#email').type(email);
+    cy.get('#password').type(password);
     
     // Hacer clic en el botón Submit
     cy.get('#submit').click();
